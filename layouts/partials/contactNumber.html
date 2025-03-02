@@ -1,0 +1,9 @@
+<div>
+    {{ if .Params.Contact }}
+    <a href="tel:{{ .Params.Contact }}" style="text-decoration: none;">
+        <button style="background-color: #2873a8; color: white; padding: 10px 20px; border-radius: 5px; border: none; cursor: pointer;">
+            Call or Text {{ .Params.ContactString | safeHTML }}
+        </button>
+    </a>
+    {{ end }}
+</div>
